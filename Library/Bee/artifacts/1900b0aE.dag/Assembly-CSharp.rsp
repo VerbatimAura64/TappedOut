@@ -457,6 +457,7 @@
 -analyzer:"C:/Users/balfo/Desktop/6000.0.41f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/BeerCatch.cs"
 "Assets/BeerSlide.cs"
+"Assets/Client.cs"
 "Assets/ClientSpawner.cs"
 "Assets/DrinkPour.cs"
 "Assets/PlayerMovement.cs"
