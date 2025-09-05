@@ -29,7 +29,7 @@ public class BeerSlide : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Deleter")
+        if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Deleter"))
         {
             Destroy(gameObject);
         }

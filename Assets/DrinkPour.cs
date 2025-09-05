@@ -16,10 +16,7 @@ public class DrinkPour : MonoBehaviour
         //playerMovement = GetComponent<PlayerMovement>();
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Pourpoint")
@@ -59,9 +56,6 @@ public class DrinkPour : MonoBehaviour
             }
             
         }
-        //transform.Translate(speed, 0, 0);
-        //beers[FindBeer()].transform.position = pourPoint.position;
-        //beers[FindBeer()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
 
     }
 
