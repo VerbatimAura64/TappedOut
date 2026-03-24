@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Deleter
+  - Wall
+  - Pourpoint
+  - DrinkPoint
+  - Spawn
+  - Bar
+  - Exit
+  - Client
+  - Beer
+  - Open
+  - Taken
+  - BarExit
+  - Drunk
+  - Pause
+  - Load
+  - Lose
+  - Score
+  - Tutorial
+  - Drinking
+  - Waiting
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Client
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Front
+    uniqueID: 3113782511
+    locked: 0
+  m_RenderingLayers:
+  - Default

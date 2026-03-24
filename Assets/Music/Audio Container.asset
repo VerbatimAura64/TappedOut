@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-3794454378792833161
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: livin on a prayer_{-3794454378792833161}
+  m_AudioClip: {fileID: 8300000, guid: ca6caa1c030302b48a53061d83d26add, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1958003543209007909
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: sandman_{-1958003543209007909}
+  m_AudioClip: {fileID: 8300000, guid: 5feb7b7e705131f4cb6d8eea25b7a9f9, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &92974775858354415
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: air 2nite_{92974775858354415}
+  m_AudioClip: {fileID: 8300000, guid: b54341caa9c4c7c4c901cfca59c8c72b, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &458924071040979681
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: wayward son_{458924071040979681}
+  m_AudioClip: {fileID: 8300000, guid: 64677f7238d500645aff57ab25a2b422, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &3461119239154746858
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: feel the noise_{3461119239154746858}
+  m_AudioClip: {fileID: 8300000, guid: febfd090820c75d4db9a18c4244f22f9, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5163819530276347004
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: countdown_{5163819530276347004}
+  m_AudioClip: {fileID: 8300000, guid: 10d290952b3f2654087e9e9914e01228, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Audio Container
+  m_Volume: -15
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: -2, y: 9}
+  m_Elements:
+  - {fileID: 92974775858354415}
+  - {fileID: 5163819530276347004}
+  - {fileID: 3461119239154746858}
+  - {fileID: 6959484021233156195}
+  - {fileID: -3794454378792833161}
+  - {fileID: 8361743636062133637}
+  - {fileID: -1958003543209007909}
+  - {fileID: 458924071040979681}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 1
+  m_TriggerMode: 1
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 1
+--- !u!1233149941 &6959484021233156195
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: kickstart_{6959484021233156195}
+  m_AudioClip: {fileID: 8300000, guid: b9d0f67e6aec5e44e995a9cbec00687f, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &8361743636062133637
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: rock n roll all nite_{8361743636062133637}
+  m_AudioClip: {fileID: 8300000, guid: 4113aefadc0c63140b809ee1be0ea9db, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
