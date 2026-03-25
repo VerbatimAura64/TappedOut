@@ -41,5 +41,5 @@ slide off
 - Difficulty scaling tied more directly to player performance
 
 ## Case Study
-Full breakdown of the technical decisions and retrospective
+Full breakdown of the technical decisions and retrospective:
 https://verbatimaura64.github.io/tapped-out.html
