@@ -42,4 +42,4 @@ slide off
 
 ## Case Study
 Full breakdown of the technical decisions and retrospective
-https://verbatimaura64.github.io/tapped-out.html
+https://verbatimaura64.github.io/case_study/tapped-out.html

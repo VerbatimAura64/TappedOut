@@ -37,7 +37,8 @@ public class GM : MonoBehaviour
         if(UnityEngine.Application.isMobilePlatform)//mode == "Mobile")
         {
             //Enable touch controls
-            prompt.SetActive(false);
+            if(prompt != null)
+                prompt.SetActive(false);
             Cntrl1.SetActive(true);
             Cntrl2.SetActive(true);
             Cntrl3.SetActive(true);
