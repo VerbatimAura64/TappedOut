@@ -48,12 +48,12 @@ public class GM : MonoBehaviour
         } else
         {
             //Disable touch screen add in's
-            /*cam.orthographicSize = 6.5f;
+            cam.orthographicSize = 6.5f;
             Cntrl1.SetActive(false);
             Cntrl2.SetActive(false);
             Cntrl3.SetActive(false);
             RetryButton.SetActive(false);
-            QuitButton.SetActive(false);*/
+            QuitButton.SetActive(false);
 
         }
     }
