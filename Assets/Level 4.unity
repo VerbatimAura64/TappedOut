@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7029419777959624173}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: MoveUp
         m_Mode: 1
@@ -756,7 +756,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -131.7074, y: 112.83442}
+  m_AnchoredPosition: {x: -131.7074, y: 112.83441}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &281767541
@@ -803,7 +803,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7029419777959624172}
         m_TargetAssemblyTypeName: DrinkPour, Assembly-CSharp
         m_MethodName: PressBeer
         m_Mode: 1
@@ -12920,7 +12920,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 178.86182, y: 116.89943}
+  m_AnchoredPosition: {x: 178.86182, y: 116.899414}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1878335203
@@ -12967,7 +12967,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7029419777959624173}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: MoveDown
         m_Mode: 1
@@ -14645,6 +14645,28 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2043006654}
   m_SourcePrefab: {fileID: 100100000, guid: 827ba4f5ee35c70428e275dfe8060857, type: 3}
+--- !u!114 &7029419777959624172 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8752050479434634396, guid: 827ba4f5ee35c70428e275dfe8060857, type: 3}
+  m_PrefabInstance: {fileID: 7029419777959624171}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043006638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60bead85ae3e453498dc4cc4a8abaa25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7029419777959624173 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7846316251932137139, guid: 827ba4f5ee35c70428e275dfe8060857, type: 3}
+  m_PrefabInstance: {fileID: 7029419777959624171}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043006638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f7a0104ac5935c4fb5e3249d7d93a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

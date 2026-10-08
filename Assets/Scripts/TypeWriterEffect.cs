@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
 
 
 [RequireComponent(typeof(TMP_Text))]
@@ -11,6 +12,7 @@ public class TypeWriterEffect : MonoBehaviour
 
     [Header("Test String")]
     [SerializeField] private string testText;
+    [SerializeField] private Button button;
 
     private int currentVisibleCharacterIndex;
     private Coroutine typewriterCoroutine;
@@ -33,7 +35,7 @@ public class TypeWriterEffect : MonoBehaviour
     [SerializeField] [Range(.01f, 0.5f)] private float sendDoneDelay = .25f;
 
     public static event Action CompleteTextRevealed;
-    public static event Action<char> CharacterRevealed;
+    //public static event Action<char> CharacterRevealed;
 
 
 
@@ -47,6 +49,7 @@ public class TypeWriterEffect : MonoBehaviour
         skippingDelay = new WaitForSeconds(1 / (charactersPerSecond*skipSpeedUp));
 
         _textboxFullEventDelay = new WaitForSeconds(sendDoneDelay);
+        
     }
 
     private void Start()
@@ -59,27 +62,14 @@ public class TypeWriterEffect : MonoBehaviour
     {
 
         _textBox.maxVisibleCharacters = 0;
+        TypeWriterEffect.CompleteTextRevealed += EnableButton;
     }
 
-    /*private void OnDisable()
+    private void OnDisable()
     {
-        TMPro_EventManager.TEXT_CHANGED_EVENT.Remove(PrepareForNewText);
-    }*/
-
-
-
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(1))
-        {
-            if (_textBox.maxVisibleCharacters != _textBox.textInfo.characterCount - 1)
-            {
-                Skip();
-            }
-        }
+     //   TMPro_EventManager.TEXT_CHANGED_EVENT.Remove(PrepareForNewText);
+        TypeWriterEffect.CompleteTextRevealed -= EnableButton;
     }
-
-
     void Skip()
     {
         if (currentlySkipping)
@@ -95,7 +85,24 @@ public class TypeWriterEffect : MonoBehaviour
         StopCoroutine(typewriterCoroutine);
         _textBox.maxVisibleCharacters = _textBox.textInfo.characterCount;
         _readyForNewText = true;
-        CompleteTextRevealed?.Invoke();
+        
+    }
+
+    public void EnableButton()
+    {
+        button.interactable = true;
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            if (_textBox.maxVisibleCharacters != _textBox.textInfo.characterCount-1)
+            {
+                Skip();
+            }
+        }
+       
     }
 
     private IEnumerator SkipSpeedupReset()
@@ -143,25 +150,28 @@ public class TypeWriterEffect : MonoBehaviour
                 _readyForNewText = true;
                 yield break;
             }*/
-
-            char character = textInfo.characterInfo[currentVisibleCharacterIndex].character;
-
-            _textBox.maxVisibleCharacters++;
-
-            if  (!currentlySkipping && (character == '?' || character == '.' || character == ',' 
-                || character == ':' || character == ';' 
-                || character == '!' || character == '-'))
+            if (_textBox.maxVisibleCharacters != textInfo.characterCount-1)
             {
+                char character = textInfo.characterInfo[currentVisibleCharacterIndex].character;
 
-                yield return interpunctuationDelay;
-            }
-            
-            else 
-            { 
-                yield return currentlySkipping? skippingDelay : simpleDelay; 
-            }
+                _textBox.maxVisibleCharacters++;
+
+                if (!currentlySkipping && (character == '?' || character == '.' || character == ','
+                    || character == ':' || character == ';'
+                    || character == '!' || character == '-'))
+                {
+
+                    yield return interpunctuationDelay;
+                }
+
+                else
+                {
+                    yield return currentlySkipping ? skippingDelay : simpleDelay;
+                }
+            } 
             currentVisibleCharacterIndex++;
-        } 
+        }
+        TypeWriterEffect.CompleteTextRevealed?.Invoke();
 
     }
 } 

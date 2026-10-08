@@ -70,6 +70,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void DismissChat()
+    {
+            chatbox.SetActive(false);
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -79,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                chatbox.SetActive(false);
+                DismissChat();
             }
         }
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -97,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
 
             for (int i = 0; i < points.Length; i++)
             {
-                if (i! < points.Length)
+                if (i != points.Length)
                 {
 
                     if (points[i] == location)
@@ -183,7 +189,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!paused)
         {
-
+            anim.SetTrigger("runButton");
             for (int i = 0; i < points.Length; i++)
             {
                 if (i! < points.Length)
@@ -194,11 +200,12 @@ public class PlayerMovement : MonoBehaviour
                         this.transform.position = new Vector3(points[i - 1].transform.position.x,
                                                             points[i - 1].transform.position.y + .361261f,
                                                             points[i - 1].transform.position.z);
-                        transform.localScale = new Vector3(-2, 3, 2);
-                        anim.SetBool("run", !pPointName.Equals(location));
+                        //transform.localScale = new Vector3(-2, 3, 2);
+                        
                     }
                 }
             }
+            //anim.SetBool("runButton", false);
         }
     }
 
@@ -206,7 +213,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!paused)
         {
-            
+            anim.SetTrigger("runButton");
             for (int i = 0; i < points.Length; i++)
             {
                 if (i < points.Length + 1)
@@ -217,12 +224,13 @@ public class PlayerMovement : MonoBehaviour
                         this.transform.position = new Vector3(points[i + 1].transform.position.x,
                                                             points[i + 1].transform.position.y + .361261f,
                                                             points[i + 1].transform.position.z);
-                        transform.localScale = new Vector3(-2, 3, -2);
-                        anim.SetBool("run", true);
+                        //transform.localScale = new Vector3(-2, 3, -2);
+                        
 
                     }
                 }
             }
+            //anim.SetBool("runButton", false);
         }
     }
 }

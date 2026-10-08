@@ -41,10 +41,12 @@ public class BarseatCheck : MonoBehaviour
     {
         for (int i = 0; i <= seatsTaken.Length; i++)
         {
-            if (peeps[i] == null)
+            for (int j = 0; j < peeps.Length; j++)
             {
-                peeps[i] = collision.gameObject;
-                break;
+                if (peeps[j] == null)
+                {
+                    peeps[j] = collision.gameObject;
+                }
             }
         }
     }
