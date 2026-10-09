@@ -18,7 +18,7 @@ public class GM : MonoBehaviour
     public GameObject bottles;
     public bool levelComplete;
     public bool levelFail;
-    public GameObject Cntrl1, Cntrl2, Cntrl3, RetryButton, QuitButton, prompt;
+    public GameObject Cntrl1, Cntrl2, Cntrl3, RetryButton, QuitButton, losePrompts;
 
     public GameObject[] spawners;
 
@@ -37,8 +37,10 @@ public class GM : MonoBehaviour
         if(UnityEngine.Application.isMobilePlatform)//mode == "Mobile")
         {
             //Enable touch controls
-            if(prompt != null)
-                prompt.SetActive(false);
+            if(losePrompts != null) 
+            { 
+                losePrompts.SetActive(false); 
+            }
             Cntrl1.SetActive(true);
             Cntrl2.SetActive(true);
             Cntrl3.SetActive(true);
@@ -89,22 +91,27 @@ public class GM : MonoBehaviour
                 goalCustomers = 1;
                 break;
             case "Level 2":
+                Time.timeScale = 1;
                 goalScore = 75;
                 goalCustomers = 3;
                 break;
             case "Level 3":
+                Time.timeScale = 1;
                 goalScore = 150;
                 goalCustomers = 20;
                 break;
             case "Level 4":
+                Time.timeScale = 1;
                 goalScore = 325;
                 goalCustomers = 50;
                 break;
             case "Level 5":
+                Time.timeScale = 1;
                 goalScore = 500;
                 goalCustomers = 100;
                 break;
             case "Level 6":
+                Time.timeScale = 1;
                 goalScore = 750;
                 goalCustomers = 150;
                 break;
