@@ -171,7 +171,7 @@ public class GM : MonoBehaviour
             {
                 if (!scene.name.Equals("Play"))
                 {
-                    SceneManager.LoadScene("Level 1");
+                    SceneManager.LoadScene(sceneNumber);
                 } else
                 {
                     Time.timeScale = 1;
